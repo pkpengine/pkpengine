@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+public class graphLibPK{
+	private RENDER_API chosenAPI;
+	private boolean lockAPI;
+	public enum RENDER_API
+	{
+		JAVA_2D, OPENGL
+	}
+	public void selectAPI(RENDER_API APIChoice)
+	{
+		if(lockAPI == true)
+		{
+			JOptionPane.showMessageDialog(null,
+				    "Eggs are not supposed to be green.",
+				    "A plain message",
+				    JOptionPane.PLAIN_MESSAGE);
+		}
+		chosenAPI = APIChoice;
+	}
+}

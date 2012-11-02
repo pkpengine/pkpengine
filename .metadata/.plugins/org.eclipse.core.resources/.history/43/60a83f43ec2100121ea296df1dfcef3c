@@ -1,0 +1,12 @@
+
+public class graphLibPK{
+	private RENDER_API chosenAPI;
+	public enum RENDER_API
+	{
+		JAVA_2D, OPENGL
+	}
+	public void selectAPI(RENDER_API APIChoice)
+	{
+		chosenAPI = APIChoice;
+	}
+}
